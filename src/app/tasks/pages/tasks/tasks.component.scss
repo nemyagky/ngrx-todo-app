@@ -1,0 +1,72 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  .tasks {
+    display: flex;
+    flex-direction: column;
+
+    .task {
+      display: flex;
+      align-items: center;
+      width: 800px;
+      height: 60px;
+      border: 1px solid rgba(0, 0, 0, 0.3);
+
+      &.completed {
+        .name {
+          color: lightgreen;
+        }
+      }
+
+      .is-completed {
+        width: 20px;
+        height: 20px;
+        margin-left: 20px;
+      }
+
+      .name {
+        flex-grow: 1;
+        margin-left: 10px;
+        font-size: 20px;
+      }
+
+      .action {
+        width: 50px;
+        height: 20px;
+
+        &.edit {
+          background-color: orange;
+        }
+
+        &.delete {
+          background-color: #FE5F55;
+        }
+      }
+    }
+  }
+
+  .add-task {
+    width: 200px;
+    height: 45px;
+    margin-top: 50px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #FE5F55;
+    cursor: pointer;
+  }
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+
+  &:visited {
+    color: black;
+  }
+}

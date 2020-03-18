@@ -1,0 +1,19 @@
+<div class="tasks" *ngFor="let task of tasks$ | async; trackBy: trackByFunction">
+    <div class="task" [ngClass]="{ completed: task.status }">
+        <label>
+            <input
+                    type="checkbox"
+                    class="is-completed"
+                    (click)="changeTaskStatus(task.id, !task.status)"
+                    [checked]="task.status"
+            />
+        </label>
+        <span class="name">{{ task.name }}</span>
+        <a class="action edit" [routerLink]="'/task/'+task.id">edit</a>
+        <button class="action delete" (click)="delete(task.id)">delete</button>
+    </div>
+</div>
+
+<span class="empty" *ngIf="!(tasks$ | async)" style="font-size: 20px">List is empty</span>
+
+<a [routerLink]="'/task/create'" class="add-task">Create task</a>

@@ -1,0 +1,48 @@
+{
+  "tasks": [
+    {
+      "id": 1584405587917,
+      "status": true,
+      "name": "Тоже слово"
+    },
+    {
+      "id": 1584407642563,
+      "name": "Окно",
+      "status": false
+    },
+    {
+      "id": 1584440237077,
+      "name": "dfsfg",
+      "status": true
+    },
+    {
+      "id": 1584555171945,
+      "status": false
+    },
+    {
+      "id": 1584555588792,
+      "status": false
+    },
+    {
+      "id": 1584555589753,
+      "status": false
+    },
+    {
+      "id": 1584555590194,
+      "status": false
+    },
+    {
+      "id": 1584555590676,
+      "status": false
+    },
+    {
+      "id": 1584555609311,
+      "status": false
+    },
+    {
+      "id": 1584555707010,
+      "name": "fff",
+      "status": false
+    }
+  ]
+}

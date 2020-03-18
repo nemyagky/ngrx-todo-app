@@ -1,0 +1,10 @@
+<form class="task" (ngSubmit)="save($event)">
+    <a [routerLink]="'/tasks'" class="back-arrow">Назад</a>
+    <input
+            name="name"
+            type="text"
+            class="name"
+            placeholder="Enter name"
+    />
+    <button class="action">Save</button>
+</form>

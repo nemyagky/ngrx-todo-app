@@ -1,0 +1,42 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  .back-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 35px;
+    background-color: lightblue;
+    text-transform: uppercase;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    cursor: pointer;
+
+    &:visited {
+      text-decoration: none;
+      color: black;
+    }
+  }
+
+  .name {
+    width: 400px;
+    padding: 8px 8px 8px 20px;
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+
+  .action {
+    width: 200px;
+    height: 45px;
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: cornflowerblue;
+  }
+}
