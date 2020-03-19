@@ -8,12 +8,13 @@ import {tasksReducer} from "./state/tasks.reducer";
 import {TasksEffects} from "./state/tasks.effects";
 import {RouterModule} from "@angular/router";
 import {FormsModule} from "@angular/forms";
+import {TASK_STATE} from "./state";
 
 @NgModule({
     declarations: [TasksComponent, TaskComponent],
     imports: [
         CommonModule,
-        StoreModule.forFeature("tasksState", tasksReducer),
+        StoreModule.forFeature(TASK_STATE, tasksReducer),
         EffectsModule.forRoot([TasksEffects]),
         RouterModule,
         FormsModule

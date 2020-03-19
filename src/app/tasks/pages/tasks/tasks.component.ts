@@ -17,8 +17,6 @@ export class TasksComponent {
     public tasks$: Observable<Task[]>;
 
     constructor(private store: Store<TasksState>) {
-        // TODO: FIX IT'S TYPES
-        // @ts-ignore
         this.tasks$ = this.store.select(fromRoot.getTasks);
     }
 

@@ -11,17 +11,18 @@ import {Component} from "@angular/core";
 
 // TODO ask about best way:
 // 1) Create base class and 2 classes (create & edit), witch implement from it
-// 2) Create
+// 2) Create strategy pattern. So, when should be main class
 // 3) everything is ok :)
+// 4) Another way
 export class TaskComponent {
-    private readonly mode: "edit" | "create";
+    private mode: "edit" | "create";
+    
+    // url is like /task/123 or /task/create
+    private taskId: number = +this.router.url.replace("/task/", "");
 
     constructor(private store: Store, private router: Router) {
-        if (this.router.url === "/task/create") {
-            this.mode = "create";
-        } else {
-            this.mode = "edit";
-        }
+
+        this.mode = this.router.url === "/task/create" ? "create" : "edit";
     }
 
     public save(event) {
@@ -49,7 +50,7 @@ export class TaskComponent {
         this.store.dispatch(
             editTask({
                 task: {
-                    id: +this.router.url.replace("/task/", ""),
+                    id: this.taskId,
                     name
                 }
             })

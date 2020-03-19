@@ -2,7 +2,7 @@
   "tasks": [
     {
       "id": 1584405587917,
-      "status": true,
+      "status": false,
       "name": "Тоже слово"
     },
     {
@@ -13,36 +13,27 @@
     {
       "id": 1584440237077,
       "name": "dfsfg",
-      "status": true
-    },
-    {
-      "id": 1584555171945,
       "status": false
     },
     {
       "id": 1584555588792,
-      "status": false
-    },
-    {
-      "id": 1584555589753,
-      "status": false
-    },
-    {
-      "id": 1584555590194,
-      "status": false
-    },
-    {
-      "id": 1584555590676,
-      "status": false
+      "status": false,
+      "name": "вв"
     },
     {
       "id": 1584555609311,
-      "status": false
+      "status": true,
+      "name": "анпро"
     },
     {
       "id": 1584555707010,
       "name": "fff",
-      "status": false
+      "status": true
+    },
+    {
+      "id": 1584602553396,
+      "name": "пр",
+      "status": true
     }
   ]
 }
